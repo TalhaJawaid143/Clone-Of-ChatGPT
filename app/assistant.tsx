@@ -39,21 +39,12 @@ export const Assistant = () => {
               <SidebarTrigger />
               <Separator orientation="vertical" className="mr-2 h-4" />
               <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem className="hidden md:block">
-                    <BreadcrumbLink
-                      href="https://www.assistant-ui.com/docs/getting-started"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Build Your Own ChatGPT UX
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator className="hidden md:block" />
-                  <BreadcrumbItem>
-                    <BreadcrumbPage>Starter Template</BreadcrumbPage>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
+                <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+            <SidebarTrigger />
+           {/* you can add your own title instead */}
+          <span className="font-semibold text-lg">My Chatbot</span>
+          </header>
+
               </Breadcrumb>
             </header>
             <div className="flex-1 overflow-hidden">
